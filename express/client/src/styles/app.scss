@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 4% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(max-width: 800px) {
+        padding: 8vh 10%
+    }
+}
+
+h1 {
+    font-family: monospace;
+    font-size: clamp(1rem, 1.7rem + 0.8vw, 3rem);
+}
+
+.logo {
+    width: clamp(150px, 20%, 300px);
+    margin: 70px 0 0 0;
+    user-select: none;
+}
